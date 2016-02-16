@@ -1,0 +1,8 @@
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .start-screen .start-screen-title-container .ss-logon-building-block { opacity: 1; visibility: visible; height: 64px; }
+
+    .map-container .markers-elements .marker-transport.marker-active { opacity: 1; visibility: visible; box-shadow: 0 0 10px #404040; }
+
+}

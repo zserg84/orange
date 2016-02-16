@@ -1,0 +1,10 @@
+
+.tenants-container { min-height: 460px; font-size: 18px; }
+
+.tenants-content { margin-top: 20px; }
+
+.ot-top { margin-top: 20px; }
+
+.ts-advertising { text-decoration: none; cursor: pointer; }
+
+.ts-advertising:hover { text-decoration: none; color: #ff941f; }

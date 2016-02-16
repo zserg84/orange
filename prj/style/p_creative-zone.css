@@ -1,0 +1,50 @@
+
+.cz-creative-container { display: block; width: 100%; min-height: 460px; font-size: 16px; }
+
+.cz-creative-container .cz-creative-item { margin: 10px 0; font-size: 18px; }
+
+.cz-creative-container .cz-creative-item .cz-item-block { display: table; width: 100%; height: 250px; background: #ffffff; color: #171717; text-decoration: none; }
+
+.cz-creative-container .cz-creative-item .cz-item-block .cz-item-cell { display: table-cell; vertical-align: middle; }
+
+.cz-creative-container .cz-creative-item .cz-item-block .cz-item-cell .cz-item-name { margin-top: 10px; }
+
+.cz-creative-container .cz-creative-item:hover .cz-item-block .cz-item-cell .cz-item-name { color: #f5850c; }
+
+.cz-creative-container.not-poster-background .cz-view-content { min-height: auto; }
+.cz-creative-container.not-poster-background .cz-view-background-poster { display: none; }
+/**/
+
+.cz-left-view-logo { display: block; width: 330px; float: left; padding-top: 10px; }
+.cz-left-view-logo img { max-width: 100%; }
+
+.cz-logo-description { margin-left: 330px; padding-left: 20px; }
+
+.cz-logo-description .cz-dsk-list { margin: 20px 0; }
+
+.cz-logo-description .cz-dsk-list .cz-dsk-name { margin-top: 10px; }
+.cz-logo-description .cz-dsk-list .cz-dsk-name:first-child { margin-top: 20px; }
+
+.cz-logo-description .cz-dsk-list .cz-dsk-name .cz-cdn-title { display: inline-block; vertical-align: middle; }
+
+.cz-logo-description .cz-dsk-list .cz-dsk-name .cz-cdn-object { display: inline-block; vertical-align: middle; margin-left: 10px; padding: 2px 12px; background: #ff5b00; color: #ffffff; }
+
+/**/
+
+.cz-view-content { margin-top: 30px; min-height: 760px; padding-left: 40px; position: relative; z-index: 2; }
+
+.cz-view-background-poster { margin-top: -760px; margin-bottom: 40px; opacity: 0.2; position: relative; z-index: 1; }
+.cz-view-background-poster img { width: 100%; }
+
+.cz-view-content .cz-view-title { padding-top: 40px; color: #ff5b00; font-weight: bold; }
+.cz-view-content .cz-view-dsk { margin-top: 10px; }
+
+/**/
+
+.ml20 { margin-left: 20px; }
+
+/**/
+
+.arendator-card-picture { margin-top: 30px; }
+.arendator-card-picture img { width: 100%; }
+

@@ -1,0 +1,86 @@
+
+body { font-family: 'ProximaNova-Regular', 'Arial'; background: #ffffff; color: #000000; margin: 0; padding: 0; }
+
+/* ---------------------------------------------- */
+
+.wrap-container { display: block; width: 100%; margin-top: 1100px; background: #ffffff; position: relative; z-index: 10; }
+
+.wrap-container .wrap-content { display: block; width: 100%; }
+
+/**/
+
+.container {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.transit-200 {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.transit-300 {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.transit-500 {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.transit-800 {
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.transit-1000 {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.transit-3000 {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+.transit-60000 {
+    -webkit-transition: 60s;
+    -moz-transition: 60s;
+    -ms-transition: 60s;
+    -o-transition: 60s;
+    transition: 60s;
+}
+
+.no-pad { padding: 0; }
+
+a:focus, input:focus, textarea:focus, button:focus, select:focus { outline: none; text-decoration: none; }
+
+.loader-img { 
+	width: 200px; 
+	height: 200px; 
+	position: fixed; 
+	top: 48%; 
+	left: 1%;
+	right: 1%;
+	margin: auto;
+	z-index: 1000;
+	text-align: center;
+}
+.loader-img img { width: 40px; height: 40px; border: none; }
+.loader-none { display: none; }

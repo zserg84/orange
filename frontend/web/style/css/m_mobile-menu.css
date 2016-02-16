@@ -1,0 +1,58 @@
+
+.background-inner-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url('../../images/i_mobile-menu/ie_background.png') repeat;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1010;
+}
+
+/**/
+
+.wt-mobile-menu {
+    display: none;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+    background: url('../../images/i_mobile-menu/menu.png') #ffffff center center no-repeat;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1020;
+}
+.wt-mobile-menu.wmm-show { display: block; }
+.wt-mobile-menu.wt-mm-active { right: 226px; }
+
+/**/
+
+.wt-mobile-content { display: none; width: 226px; height: 100%; background: #53456f; overflow-y: auto; position: fixed; top: 0; right: -226px; z-index: 1021; }
+.wt-mobile-content.wmc-show { display: block; }
+
+.wt-mobile-content.wt-mm-cont-active { right: 0; box-shadow: 0 0 20px #ffffff; }
+
+.wt-mobile-content .wt-link-menu { display: block; width: 100%; font-family: 'Arial'; font-size: 16px; color: #ffffff; text-align: right; text-decoration: none; /*text-transform: uppercase;*/ }
+
+.wt-mobile-content .wt-link-menu .wt-menu-name { display: block; width: 100%; padding: 17px 22px 17px 10px; }
+
+.wt-mobile-content .wt-link-menu .wt-link-separator { display: block; width: 100%; height: 1px; padding: 0 10px; }
+
+.wt-mobile-content .wt-link-menu .wt-link-separator .separator-line { display: block; width: 100%; height: 1px; background: #49376F; }
+
+.wt-mobile-content .wt-link-menu:hover { background: #f1592a; color: #ffffff; }
+.wt-mobile-content .wt-link-menu.wt-menu-active { background: #f1592a; color: #ffffff; }
+
+/**/
+
+.wt-info-block { display: block; width: 100%; padding: 20px 10px; position: absolute; left: 0; bottom: 0; z-index: 1; }
+.wt-info-block.wt-min-rel { position: relative !important; margin-bottom: 50px; }
+.wt-info-phone { margin-bottom: 10px; font-family: 'Arial'; font-size: 20px; color: #ff5400; font-weight: bold; text-decoration: none; }
+.wt-info-phone:hover { color: #ff5400; text-decoration: none; }
+.wt-arial-white { font-family: 'Arial'; color: #ffffff; }
+.wt-soc { margin-top: 20px; }
+.wt-soc .social-ic.s-facebook { margin-left: 40px; }
+.wt-soc .social-ic.s-vk { margin-right: 40px; }

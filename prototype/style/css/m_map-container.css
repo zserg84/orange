@@ -1,0 +1,174 @@
+
+.map-container { display: block; width: 100%; position: relative; z-index: 50; overflow: hidden; }
+
+/**/
+
+.map-container .map-background {
+    display: block;
+    width: 100%;
+    height: 950px;
+    position: relative;
+    z-index: 1;
+    background: url('../images/i_map/map-background.png') center center no-repeat;
+    background-size: 1920px auto;
+}
+
+/**/
+
+.map-container .markers-elements {
+    display: block;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    top: 0;
+    z-index: 10;
+}
+
+.map-container .markers-elements .marker-object { display: block; width: 77px; height: 106px; position: absolute; z-index: 1; opacity: 0; visibility: hidden; }
+.map-container .markers-elements .marker-object.mo-position { left: 274px; top: 122px; }
+
+.map-container .markers-elements .marker-object img { max-height: 100%; }
+
+.map-container .markers-elements .marker-object .marker-object-name {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'ProximaNova-Bold';
+    font-size: 20px;
+    color: #eb7378;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #ffffff;
+    position: absolute;
+    left: -240px;
+    top: 80px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.map-container .markers-elements .marker-object.marker-active { top: 222px; opacity: 1; visibility: visible; }
+
+.map-container .markers-elements .marker-object.marker-active .marker-object-name { left: -140px; opacity: 1; visibility: visible; }
+
+/**/
+
+.map-container .markers-elements .marker-other-object { display: block; width: 42px; height: 57px; position: absolute; z-index: 1; }
+
+.map-container .markers-elements .marker-other-object.object-posit-1 { left: 418px; top: 348px; }
+.map-container .markers-elements .marker-other-object.object-posit-2 { left: -80px; top: 314px; }
+.map-container .markers-elements .marker-other-object.object-posit-3 { left: 726px; top: 182px; }
+.map-container .markers-elements .marker-other-object.object-posit-4 { left: 1094px; top: 506px; }
+
+.map-container .markers-elements .marker-other-object .marker-other-object-name { display: inline-block; vertical-align: top; font-family: 'ProximaNova-Bold'; font-size: 18px; color: #292929; text-transform: uppercase; text-shadow: 2px 2px 0px #ffffff; white-space: nowrap; position: absolute; z-index: 1; opacity: 0; visibility: hidden; }
+
+.map-container .markers-elements .marker-other-object .marker-other-object-name.object-name-posit-1 { left: -74px; top: 110px; }
+.map-container .markers-elements .marker-other-object .marker-other-object-name.object-name-posit-2 { left: -20px; top: 110px; }
+.map-container .markers-elements .marker-other-object .marker-other-object-name.object-name-posit-3 { left: -58px; top: 110px; }
+.map-container .markers-elements .marker-other-object .marker-other-object-name.object-name-posit-4 { left: -52px; top: 110px; }
+
+.map-container .markers-elements .marker-other-object .marker-other-object-name .name-center { text-transform: none; text-align: center; }
+
+.map-container .markers-elements .marker-other-object img { position: relative; left: 0; top: -40px; opacity: 0; visibility: hidden; }
+
+.map-container .markers-elements .marker-other-object.marker-active img { top: 0; opacity: 1; visibility: visible; }
+.map-container .markers-elements .marker-other-object.marker-active .marker-other-object-name { top: 70px !important; opacity: 1; visibility: visible; }
+
+/**/
+
+.map-container .markers-elements .marker-transport { display: inline-block; vertical-align: top; position: absolute; z-index: 1; transform: scale(0) rotate(0deg); animation-duration: 0.8s; animation-fill-mode: both; opacity: 0; visibility: hidden; }
+
+.map-container .markers-elements .marker-transport.transport-posit-1 { left: 346px; top: 302px; }
+.map-container .markers-elements .marker-transport.transport-posit-2 { left: 165px; top: 480px; }
+.map-container .markers-elements .marker-transport.transport-posit-3 { left: 184px; top: 560px; }
+
+.map-container .markers-elements .marker-transport.marker-active { animation-name: markerTransportAnimate; }
+
+@-webkit-keyframes markerTransportAnimate {
+    to { opacity: 1; visibility: visible; }
+    60% { transform: scale(1.4) rotate(-45deg); }
+    80% { transform: scale(1.3) rotate(70deg); }
+    100% { transform: scale(1.2) rotate(0deg); box-shadow: 0 0 10px #404040; }
+}
+@keyframes markerTransportAnimate {
+    to { opacity: 1; visibility: visible; }
+    60% { transform: scale(1.4) rotate(-45deg); }
+    80% { transform: scale(1.3) rotate(70deg); }
+    100% { transform: scale(1.2) rotate(0deg); box-shadow: 0 0 10px #404040; }
+}
+
+/**/
+
+.map-container .markers-elements .marker-outcome { display: inline-block; vertical-align: top; font-family: 'ProximaNova-Bold'; font-size: 14px; color: #3e8834; text-transform: uppercase; text-shadow: 2px 2px 0px #ffffff; text-align: center; position: absolute; z-index: 1; transform: scale(1.8); animation-duration: 0.8s; animation-fill-mode: both; opacity: 0; visibility: hidden; }
+
+.map-container .markers-elements .marker-outcome .marker-out-line { display: inline-block; vertical-align: top; position: absolute; z-index: 1; }
+
+.map-container .markers-elements .marker-outcome.outcome-posit-1 { left: 450px; top: 778px; } .map-container .markers-elements .marker-outcome.outcome-posit-1 .marker-out-line { left: -110px; top: -292px; }
+.map-container .markers-elements .marker-outcome.outcome-posit-2 { left: 310px; top: 560px; } .map-container .markers-elements .marker-outcome.outcome-posit-2 .marker-out-line { left: -66px; top: 146px; }
+/*.map-container .markers-elements .marker-outcome.outcome-posit-3 { left: 500px; top: 60px; }  */
+
+.map-container .markers-elements .marker-outcome.marker-active { animation-name: markerOutcomeAnimate; }
+
+.map-container .markers-elements .marker-outcome.marker-active.outcome-posit-1 { left: 350px; top: 678px; }
+.map-container .markers-elements .marker-outcome.marker-active.outcome-posit-2 { left: 310px; top: 484px; }
+/*.map-container .markers-elements .marker-outcome.marker-active.outcome-posit-3 { left: 466px; top: 136px; }*/
+
+@-webkit-keyframes markerOutcomeAnimate {
+    to { transform: scale(1); opacity: 1; visibility: visible; }
+}
+@keyframes markerOutcomeAnimate {
+    to { transform: scale(1); opacity: 1; visibility: visible; }
+}
+
+/**/
+
+.map-container .nav-map-buttons { display: block; width: 300px; position: absolute; left: 80px; top: 460px; z-index: 14; }
+
+.map-container .nav-map-buttons .nav-map-btn { display: block; width: 100%; margin-top: 18px; background: rgba(255, 255, 255, 0.5); border: 3px solid #818181; cursor: pointer; }
+
+.map-container .nav-map-buttons .nav-map-btn .icon-nav-btn { display: block; width: 80px; height: 52px; float: left; }
+
+.map-container .nav-map-buttons .nav-map-btn .icon-nav-btn.icon-btn-1 { background: url('../images/i_map/icon-1.png') center center no-repeat; }
+.map-container .nav-map-buttons .nav-map-btn .icon-nav-btn.icon-btn-2 { background: url('../images/i_map/icon-2.png') center center no-repeat; }
+.map-container .nav-map-buttons .nav-map-btn .icon-nav-btn.icon-btn-3 { background: url('../images/i_map/icon-3.png') center center no-repeat; }
+
+.map-container .nav-map-buttons .nav-map-btn .btn-name { margin-left: 80px; }
+
+.map-container .nav-map-buttons .nav-map-btn .btn-name .bn-block { display: table; width: 100%; height: 52px; }
+
+.map-container .nav-map-buttons .nav-map-btn .btn-name .bn-block .bn-block-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-family: 'ProximaNova-Bold';
+    font-size: 14px;
+    color: #636262;
+    text-transform: uppercase;
+}
+
+.map-container .nav-map-buttons .nav-map-btn:hover { background: rgba(255, 255, 255, 0.8); }
+.map-container .nav-map-buttons .nav-map-btn:active .btn-name .bn-block .bn-block-cell { padding-top: 2px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

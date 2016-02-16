@@ -1,0 +1,38 @@
+
+.or-footer .footer-container {
+    display: block;
+    width: 630px;
+    height: 570px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 2px 10px #303030;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.or-footer .footer-container.fc-min-height { height: 320px; }
+
+.or-footer .footer-container .fc-cell { display: block; width: 100%; padding: 12px 20px; font-size: 12px; color: #666666; position: absolute; left: 0; bottom: 0; z-index: 1; }
+
+.or-footer .footer-container .fc-cell .fc-location { width: 140px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

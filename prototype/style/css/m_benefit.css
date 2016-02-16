@@ -1,0 +1,455 @@
+
+.benefit-container { display: block; width: 100%; padding: 30px 0; overflow: hidden; background: url('../images/i_benefit/benefit-background.png') repeat; }
+
+.benefit-container .bc-title { display: block; width: 100%; padding: 0 10px; font-family: 'ProximaNova-Light'; font-size: 40px; color: #172228; text-align: center; }
+
+.benefit-container .bc-separator { display: block; max-width: 434px; margin: 0 auto; padding: 0 10px; text-align: center; }
+
+.benefit-container .bc-separator img { width: 100%; }
+
+.benefit-container .benefit-content { display: block; width: 100%; margin-top: 30px; position: relative; }
+
+.benefit-container .benefit-content .tile-list { display: block; max-width: 1100px; margin: 0 auto; font-size: 0; text-align: center; position: relative; z-index: 2; }
+
+.benefit-container .benefit-content .tile-list .tile-item { display: inline-block; vertical-align: top; width: 330px; height: 330px; margin: 6px; background: #ffffff; color: #555555; overflow: hidden; box-shadow: 0 0 6px #a9a8a8; }
+
+.benefit-container .benefit-content .tile-list .tile-item .tile-item-icon { display: block; width: 100%; height: 68px; margin-top: 24px; position: relative; }
+.benefit-container .benefit-content .tile-list .tile-item .tile-item-icon img { display: inline-block; vertical-align: top; margin: 0 auto; position: absolute; left: 1%; right: 1%; bottom: 0; z-index: 1; }
+
+.benefit-container .benefit-content .tile-list .tile-item .tile-item-content { display: block; width: 100%; margin-top: 24px; padding: 0 12px; }
+
+.benefit-container .benefit-content .tile-list .tile-item .tile-item-content .tic-title { display: block; width: 100%; height: 44px; font-size: 16px; color: #000000; text-transform: uppercase; text-align: center; }
+
+.benefit-container .benefit-content .tile-list .tile-item .tile-item-content .tic-description { display: block; width: 100%; margin-top: 20px; font-size: 16px; }
+
+.benefit-container .benefit-bottom { display: block; width: 100%; margin-top: 20px; font-size: 25px; color: #333333; text-align: center; }
+
+.benefit-container .benefit-bottom .bb-cell { display: inline-block; vertical-align: top; }
+.benefit-container .benefit-bottom .bb-cell.bb-cell-middle { margin: 0 60px; }
+
+.benefit-container .benefit-content .benefit-parallax {
+    display: block;
+    width: 100%;
+    height: 550px;
+    background: url('../images/i_benefit/img-background.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 1;
+}
+.benefit-container .benefit-content .benefit-parallax .bp-inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 90, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/**/
+
+.ti-1 {
+    transform: perspective(1300px) rotateY(0deg);
+    transform-origin: 100% 100%;
+    perspective-origin: 100% 100%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile1Animate;
+    -moz-animation-name: closeTile1Animate;
+    -o-animation-name: closeTile1Animate;
+    animation-name: closeTile1Animate;
+
+}
+@-webkit-keyframes closeTile1Animate {
+    to {
+        transform: perspective(1300px) rotateY(90deg);
+        transform-origin: 100% 100%;
+        perspective-origin: 100% 100%;
+    }
+}
+@keyframes closeTile1Animate {
+    to {
+        transform: perspective(1300px) rotateY(90deg);
+        transform-origin: 100% 100%;
+        perspective-origin: 100% 100%;
+    }
+}
+
+.ti-2 {
+    transform: perspective(1300px) rotateX(0deg);
+    transform-origin: 50% 100%;
+    perspective-origin: 50% 100%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile2Animate;
+    -moz-animation-name: closeTile2Animate;
+    -o-animation-name: closeTile2Animate;
+    animation-name: closeTile2Animate;
+
+}
+@-webkit-keyframes closeTile2Animate {
+    to {
+        transform: perspective(1300px) rotateX(-90deg);
+        transform-origin: 50% 100%;
+        perspective-origin: 50% 100%;
+    }
+}
+@keyframes closeTile2Animate {
+    to {
+        transform: perspective(1300px) rotateX(-90deg);
+        transform-origin: 50% 100%;
+        perspective-origin: 50% 100%;
+    }
+}
+
+.ti-3 {
+    transform: perspective(1300px) rotateY(0deg);
+    transform-origin: 0% 100%;
+    perspective-origin: 0% 100%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile3Animate;
+    -moz-animation-name: closeTile3Animate;
+    -o-animation-name: closeTile3Animate;
+    animation-name: closeTile3Animate;
+
+}
+@-webkit-keyframes closeTile3Animate {
+    to {
+        transform: perspective(1300px) rotateY(-90deg);
+        transform-origin: 0% 100%;
+        perspective-origin: 0% 100%;
+    }
+}
+@keyframes closeTile3Animate {
+    to {
+        transform: perspective(1300px) rotateY(-90deg);
+        transform-origin: 0% 100%;
+        perspective-origin: 0% 100%;
+    }
+}
+
+.ti-4 {
+    transform: perspective(1300px) rotateY(0deg);
+    transform-origin: 100% 0%;
+    perspective-origin: 100% 0%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile4Animate;
+    -moz-animation-name: closeTile4Animate;
+    -o-animation-name: closeTile4Animate;
+    animation-name: closeTile4Animate;
+
+}
+@-webkit-keyframes closeTile4Animate {
+    to {
+        transform: perspective(1300px) rotateY(90deg);
+        transform-origin: 100% 0%;
+        perspective-origin: 100% 0%;
+    }
+}
+@keyframes closeTile4Animate {
+    to {
+        transform: perspective(1300px) rotateY(90deg);
+        transform-origin: 100% 0%;
+        perspective-origin: 100% 0%;
+    }
+}
+
+.ti-5 {
+    transform: perspective(1300px) rotateX(0deg);
+    transform-origin: 50% 0%;
+    perspective-origin: 50% 0%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile5Animate;
+    -moz-animation-name: closeTile5Animate;
+    -o-animation-name: closeTile5Animate;
+    animation-name: closeTile5Animate;
+}
+@-webkit-keyframes closeTile5Animate {
+    to {
+        transform: perspective(1300px) rotateX(90deg);
+        transform-origin: 50% 0%;
+    }
+}
+@keyframes closeTile5Animate {
+    to {
+        transform: perspective(1300px) rotateX(90deg);
+        transform-origin: 50% 0%;
+    }
+}
+
+.ti-6 {
+    transform: perspective(1300px) rotateY(0deg);
+    transform-origin: 0% 0%;
+    perspective-origin: 0% 0%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: closeTile6Animate;
+    -moz-animation-name: closeTile6Animate;
+    -o-animation-name: closeTile6Animate;
+    animation-name: closeTile6Animate;
+
+}
+@-webkit-keyframes closeTile6Animate {
+    to {
+        transform: perspective(1300px) rotateY(-90deg);
+        transform-origin: 0% 0%;
+        perspective-origin: 0% 0%;
+    }
+}
+@keyframes closeTile6Animate {
+    to {
+        transform: perspective(1300px) rotateY(-90deg);
+        transform-origin: 0% 0%;
+        perspective-origin: 0% 0%;
+    }
+}
+
+/**/
+
+.tiles-animated .ti-1 {
+    transform: perspective(1300px) rotateY(90deg);
+    transform-origin: 100% 100%;
+    perspective-origin: 100% 100%;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile1Animate;
+    -moz-animation-name: openTile1Animate;
+    -o-animation-name: openTile1Animate;
+    animation-name: openTile1Animate;
+}
+.tiles-animated .ti-2 {
+    transform: perspective(1300px) rotateX(-90deg);
+    transform-origin: 50% 100%;
+    perspective-origin: 50% 100%;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile2Animate;
+    -moz-animation-name: openTile2Animate;
+    -o-animation-name: openTile2Animate;
+    animation-name: openTile2Animate;
+}
+.tiles-animated .ti-3 {
+    transform: perspective(1300px) rotateY(-90deg);
+    transform-origin: 0% 100%;
+    perspective-origin: 0% 100%;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile3Animate;
+    -moz-animation-name: openTile3Animate;
+    -o-animation-name: openTile3Animate;
+    animation-name: openTile3Animate;
+}
+.tiles-animated .ti-4 {
+    transform: perspective(1300px) rotateY(90deg);
+    transform-origin: 100% 0%;
+    perspective-origin: 100% 0%;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile4Animate;
+    -moz-animation-name: openTile4Animate;
+    -o-animation-name: openTile4Animate;
+    animation-name: openTile4Animate;
+}
+.tiles-animated .ti-5 {
+    transform: perspective(1300px) rotateX(90deg);
+    transform-origin: 50% 0%;
+    perspective-origin: 50% 0%;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile5Animate;
+    -moz-animation-name: openTile5Animate;
+    -o-animation-name: openTile5Animate;
+    animation-name: openTile5Animate;
+}
+.tiles-animated .ti-6 {
+    transform: perspective(1300px) rotateY(-90deg);
+    transform-origin: 0% 0%;
+    perspective-origin: 0% 0%;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: openTile6Animate;
+    -moz-animation-name: openTile6Animate;
+    -o-animation-name: openTile6Animate;
+    animation-name: openTile6Animate;
+}
+
+@-webkit-keyframes openTile1Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 100% 100%;
+        perspective-origin: 100% 100%;
+    }
+}
+@keyframes openTile1Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 100% 100%;
+        perspective-origin: 100% 100%;
+    }
+}
+
+@-webkit-keyframes openTile2Animate {
+    to {
+        transform: perspective(1300px) rotateX(0deg);
+        transform-origin: 50% 100%;
+    }
+}
+@keyframes openTile2Animate {
+    to {
+        transform: perspective(1300px) rotateX(0deg);
+        transform-origin: 50% 100%;
+    }
+}
+
+@-webkit-keyframes openTile3Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 0% 100%;
+        perspective-origin: 0% 100%;
+    }
+}
+@keyframes openTile3Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 0% 100%;
+        perspective-origin: 0% 100%;
+    }
+}
+
+@-webkit-keyframes openTile4Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 100% 0%;
+        perspective-origin: 100% 0%;
+    }
+}
+@keyframes openTile4Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 100% 0%;
+        perspective-origin: 100% 0%;
+    }
+}
+
+@-webkit-keyframes openTile5Animate {
+    to {
+        transform: perspective(1300px) rotateX(0deg);
+        transform-origin: 50% 0%;
+    }
+}
+@keyframes openTile5Animate {
+    to {
+        transform: perspective(1300px) rotateX(0deg);
+        transform-origin: 50% 0%;
+    }
+}
+
+@-webkit-keyframes openTile6Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 0% 0%;
+        perspective-origin: 0% 0%;
+    }
+}
+@keyframes openTile6Animate {
+    to {
+        transform: perspective(1300px) rotateY(0deg);
+        transform-origin: 0% 0%;
+        perspective-origin: 0% 0%;
+    }
+}

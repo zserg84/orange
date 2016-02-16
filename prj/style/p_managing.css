@@ -1,0 +1,29 @@
+
+.man-contact-container { min-height: 460px; font-size: 16px; }
+
+.mcc-title-1 { margin-bottom: 16px; font-size: 18px; }
+.mcc-bik, .mcc-bik p { font-size: 16px; }
+
+/**/
+
+.man-other-object {  margin: 10px 0; position: relative; }
+.man-other-object img { width: 100%; }
+.man-other-object:hover .man-shading-container { opacity: 1; visibility: visible; }
+
+.man-location-container { margin-top: 40px; }
+.man-location-container .man-location-name { margin-top: 10px; }
+.man-location-container .man-location-name:first-child {  margin-top: 0; }
+
+.man-map { margin-top: 20px; }
+
+.frame-map { display: block; width: 100%; height: 300px; border: 0; }
+
+.man-shading-container { display: block; width: 100%; height: 100%; padding: 0 15px; color: #ffffff; position: absolute; left: 0; top: 0; z-index: 1; opacity: 0; visibility: hidden; }
+.man-shading-container .man-sc-block { display: table; width: 100%; height: 100%; padding: 0 0; color: #ffffff; /*position: absolute; left: 0; top: 0; z-index: 1;*/ }
+.man-shading-container .man-sc-block .man-shading-cell { display: table-cell; vertical-align: middle; width: 100%; background: rgba(0, 0, 0, 0.6); text-align: center; }
+
+
+
+
+
+

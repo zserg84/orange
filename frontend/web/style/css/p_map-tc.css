@@ -1,0 +1,77 @@
+
+.map-tc-container { min-height: 460px; font-size: 16px; }
+
+/**/
+
+.module-choose-floor { display: table; width: 100%; margin-top: 40px; }
+
+.mcf-item { display: table-cell; vertical-align: top; width: 20%; color: #4f4269; text-decoration: none; }
+.mcf-item:hover { text-decoration: none; }
+
+.mcf-item .mcf-item-icon { display: inline-block; vertical-align: top; width: 61px; height: 46px; position: relative; }
+.mcf-item .mcf-item-icon img { margin: 0 auto; }
+.mcf-item .mcf-item-icon .floor-icon-default { position: absolute; left: 1%; top: 0; right: 1%; z-index: 1; opacity: 1; visibility: visible; }
+.mcf-item .mcf-item-icon .floor-icon-visible { position: absolute; left: 1%; top: 0; right: 1%; z-index: 1; opacity: 0; visibility: hidden; }
+
+.mcf-item .mcf-item-name { margin-top: 20px; font-weight: bold; }
+
+.mcf-item:hover .mcf-item-icon .floor-icon-default { opacity: 0; visibility: hidden; }
+.mcf-item:hover .mcf-item-icon .floor-icon-visible { opacity: 1; visibility: visible; }
+.mcf-item:hover .mcf-item-name { color: #ff9600; }
+
+.mcf-item.mcf-active .mcf-item-icon .floor-icon-default { opacity: 0; visibility: hidden; }
+.mcf-item.mcf-active .mcf-item-icon .floor-icon-visible { opacity: 1; visibility: visible; }
+.mcf-item.mcf-active .mcf-item-name { color: #ff9600; }
+
+/**/
+
+.module-map-floor { margin-top: 40px; }
+
+.imap-floor { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
+.module-map-description { margin-top: 40px; }
+
+
+
+
+
+
+
+
+
+

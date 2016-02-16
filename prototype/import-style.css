@@ -1,0 +1,38 @@
+
+/* FONTS */
+@import url("style/fonts/import-fonts.css");
+/*/FONTS/*/
+
+/* MOBILE MENU */
+@import url("style/css/m_mobile-menu.css");
+/*/MOBILE MENU/*/
+
+/* HEADER */
+@import url("style/css/m_start-screen.css");
+/*/HEADER/*/
+
+/* SECTION */
+@import url("style/css/m_top-bar.css");
+@import url("style/css/m_plan-container.css");
+@import url("style/css/m_benefit.css");
+@import url("style/css/m_about.css");
+@import url("style/css/m_map-container.css");
+@import url("style/css/m_photo-galery.css");
+@import url("style/css/m_form-call.css");
+/*/SECTION/*/
+
+/* FOOTER */
+@import url("style/css/m_footer.css");
+/*/FOOTER/*/
+
+/* PLAN PHOTO WINDOW */
+@import url("style/css/m_plan-office-gallery.css");
+/*/PLAN PHOTO WINDOW/*/
+
+/* MODAL WINDOW */
+@import url("style/css/modal-window/m_modal-window.css");
+/*/MODAL WINDOW/*/
+
+/* Media Screen */
+@import url("style/css/media/m_media-screen.css");
+/*/Media Screen/*/

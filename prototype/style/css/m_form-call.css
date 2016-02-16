@@ -1,0 +1,21 @@
+
+.form-call-container { display: block; width: 100%; background: url('../images/i_contacts/contacts-background.jpg') center center no-repeat; background-size: cover; }
+
+.form-call-container .fcl-form { display: block; width: 100%; padding: 20px 0; background: rgba(21, 24, 43, 0.8); color: #505864; }
+
+.form-call-container .fcl-form .fcl-form-block { display: block; width: 770px; margin: 0 auto; padding: 30px 20px 40px 20px; background: #ffffff; }
+
+.form-call-container .fcl-form .fcl-form-block .fcl-form-title { display: block; width: 100%; font-size: 36px; text-align: center; }
+
+.form-call-container .fcl-form .fcl-form-block .fcl-form-title .bc-separator { display: block; max-width: 434px; margin: 0 auto; padding: 0 10px; text-align: center; }
+.form-call-container .fcl-form .fcl-form-block .fcl-form-title .bc-separator img { width: 100%; }
+
+.form-call-container .fcl-form .fcl-form-block .input-blocks { display: block; width: 630px; margin: 0 auto; }
+
+.form-call-container .fcl-form .fcl-form-block .input-blocks .form-input { display: block; width: 100%; background: #eaeaea; padding: 8px 18px; font-size: 30px; color: #505864; margin-top: 34px; border: 0; border-radius: 0; }
+.form-call-container .fcl-form .fcl-form-block .input-blocks .form-input:first-child { margin-top: 22px; }
+
+.form-call-container .fcl-form .fcl-form-block .button-block { display: block; width: 100%; text-align: center; margin-top: 34px; }
+
+.form-call-container .fcl-form .fcl-form-block .button-block .btn-call { display: inline-block; vertical-align: top; padding: 8px 70px; font-size: 30px; background: #eb7378; color: #ffffff; border: 0; border-radius: 4px; }
+.form-call-container .fcl-form .fcl-form-block .button-block .btn-call:hover { background: #bb4c50; }

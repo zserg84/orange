@@ -1,0 +1,14 @@
+
+.about-container { display: block; width: 100%; }
+
+.about-container .about-title { display: block; width: 100%; margin-top: 30px; padding: 0 10px; font-family: 'ProximaNova-Light'; font-size: 40px; color: #172228; text-align: center; }
+
+.about-container .about-separator { display: block; max-width: 434px; margin: 0 auto; padding: 0 10px; text-align: center; }
+.about-container .about-separator img { width: 100%; }
+
+/**/
+
+.about-container .about-content { display: block; width: 100%; margin-top: 20px; margin-bottom: 30px; font-size: 25px; color: #333333; text-align: center; }
+
+.about-container .about-content .bb-cell { display: inline-block; vertical-align: top; }
+.about-container .about-content .bb-cell.bb-cell-middle { margin: 0 60px; }

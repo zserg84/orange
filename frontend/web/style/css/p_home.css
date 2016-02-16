@@ -1,0 +1,77 @@
+
+.start-welcome { height: 100%; background: #ffffff; position: fixed; left: 0; top: 0; z-index: 500;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity: 1;
+    visibility: visible;
+}
+.start-welcome.animate-active { background: none; }
+
+.start-welcome.welcome-none { display: none; }
+
+/**/
+
+.or-great-block {
+    display: block;
+    width: 100%;
+    min-height: 410px;
+    height: auto;
+    /*max-height: 768px;*/
+    background: #ffffff;
+    box-shadow: 0 0 20px #606060;
+    position: relative;
+    z-index: 2;
+}
+
+/**/
+
+.carousel-start-page { display: inline-block; vertical-align: top; width: 100%; height: 100%; min-height: 210px; }
+
+/* flex-style */
+.carousel-start-page .slides { margin: 0; padding: 0; list-style: none; width: 100%; height: 100%; }
+
+.carousel-start-page .slides > li {
+    -webkit-backface-visibility: hidden;
+    display: none;
+    width: 100% !important;
+    height: 100%;
+}
+
+.carousel-start-page .flex-control-nav {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    z-index: 1;
+}
+.carousel-start-page .flex-control-nav li { display: inline-block; vertical-align: top; }
+
+.carousel-start-page .flex-control-nav li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background: #d1d1d1;
+    font-size: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.carousel-start-page .flex-control-nav li a:hover { background: #f1592a; opacity: 0.5; }
+.carousel-start-page .flex-control-nav li a.flex-active { background: #f1592a; opacity: 1; }
+/* flex-style */
+
+.sp-item-slide { display: inline-block; vertical-align: top; width: 100%; height: 100%; background-size: cover !important; background-repeat: no-repeat !important; background-position: 50% 50% !important; }
