@@ -208,6 +208,7 @@ $(document).on("click", ".close-mt-tooltip", function() {
 });
 
 $(document).on("click", ".ts-advertising", function() {
+    $(".pop-leave-demand .pop-description img").prop("src", $(this).data("image"));
     $(".pop-leave-demand").addClass("pop-show");
 });
 $(document).on("click", ".pop-close", function() {

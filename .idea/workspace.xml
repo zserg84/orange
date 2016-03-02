@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c3bd79b-d1fd-4a01-b0d6-1614f3e23ce2" name="Default" comment="" />
+    <list default="true" id="3c3bd79b-d1fd-4a01-b0d6-1614f3e23ce2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bower/yii2-pjax" afterPath="$PROJECT_DIR$/vendor/bower/yii2-pjax" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/scripts/configuration.js" afterPath="$PROJECT_DIR$/frontend/web/scripts/configuration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="orange.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,18 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LevelController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/LevelController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1410">
-              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
-              <folding>
-                <element signature="e#116#150#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sidebar-menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/web/theme/views/layouts/sidebar-menu.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,8 +109,18 @@
       <file leaf-file-name="tenants.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/site/tenants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.583334" vertical-offset="238" max-vertical-offset="855">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.5660377" vertical-offset="267" max-vertical-offset="855">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.4339623" vertical-offset="3402" max-vertical-offset="4710">
+              <caret line="251" column="62" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -127,8 +129,8 @@
       <file leaf-file-name="configuration.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/web/scripts/configuration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6672828" vertical-offset="3119" max-vertical-offset="3660">
-              <caret line="232" column="16" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.4547135" vertical-offset="2889" max-vertical-offset="3675">
+              <caret line="209" column="55" selection-start-line="209" selection-start-column="55" selection-end-line="209" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -140,6 +142,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -174,7 +179,6 @@
         <option value="$PROJECT_DIR$/backend/views/tenant/index.php" />
         <option value="$PROJECT_DIR$/backend/views/space/_form.php" />
         <option value="$PROJECT_DIR$/backend/models/search/SpaceSearch.php" />
-        <option value="$PROJECT_DIR$/frontend/web/scripts/configuration.js" />
         <option value="$PROJECT_DIR$/frontend/config/main.php" />
         <option value="$PROJECT_DIR$/frontend/views/tenant/info.php" />
         <option value="$PROJECT_DIR$/backend/views/tenant/_form.php" />
@@ -195,6 +199,7 @@
         <option value="$PROJECT_DIR$/frontend/views/site/tc-map.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/uk.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/tenants.php" />
+        <option value="$PROJECT_DIR$/frontend/web/scripts/configuration.js" />
       </list>
     </option>
   </component>
@@ -203,7 +208,7 @@
     <option name="width" value="1366" />
     <option name="height" value="743" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -437,6 +442,46 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -503,7 +548,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="6990">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3957" max-vertical-offset="4710">
-          <caret line="280" column="45" selection-start-line="280" selection-start-column="31" selection-end-line="280" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -843,7 +881,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1410">
           <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
           <folding>
-            <element signature="e#116#150#0#PHP" expanded="true" />
+            <element signature="e#116#150#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -904,18 +942,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4339623" vertical-offset="3402" max-vertical-offset="4710">
+          <caret line="251" column="62" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/site/tenants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.583334" vertical-offset="238" max-vertical-offset="855">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.5660377" vertical-offset="267" max-vertical-offset="855">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/web/scripts/configuration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6672828" vertical-offset="3119" max-vertical-offset="3660">
-          <caret line="232" column="16" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.4547135" vertical-offset="2889" max-vertical-offset="3675">
+          <caret line="209" column="55" selection-start-line="209" selection-start-column="55" selection-end-line="209" selection-end-column="55" />
           <folding />
         </state>
       </provider>
