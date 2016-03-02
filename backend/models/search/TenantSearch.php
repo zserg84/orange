@@ -19,14 +19,14 @@ class TenantSearch extends Tenant
 
     public function rules(){
         return [
-            [['name', 'levelName', 'categoryName'], 'safe'],
+            [['name', /*'levelName',*/ 'categoryName'], 'safe'],
         ];
     }
 
     public function attributeLabels(){
         return array_merge(
             parent::attributeLabels(), [
-                'levelName' => 'Этаж',
+//                'levelName' => 'Этаж',
                 'categoryName' => 'Категория товаров',
                 'name' => 'Наименование',
             ]
@@ -59,13 +59,13 @@ class TenantSearch extends Tenant
 
         $query->andFilterWhere(['LIKE', 'tenant.name', $this->name]);
 
-        if($this->_levelName){
+        /*if($this->_levelName){
             $query->innerJoinWith([
                 'space' => function($query){
                     $query->andWhere(['space.level_id' => $this->_levelName]);
                 }
             ]);
-        }
+        }*/
         if($this->_categoryName){
             $query->andWhere(['tenant.goods_category_id' => $this->_categoryName]);
         }
@@ -74,7 +74,7 @@ class TenantSearch extends Tenant
     }
 
 
-    public function getLevelName(){
+    /*public function getLevelName(){
         if($this->_levelName)
             return $this->_levelName;
         if($space = $this->space){
@@ -85,7 +85,7 @@ class TenantSearch extends Tenant
 
     public function setLevelName($value){
         $this->_levelName = $value;
-    }
+    }*/
 
     public function getCategoryName(){
         if($this->_categoryName)

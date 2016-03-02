@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use common\models\query\TenantQuery;
 
 /**
  * This is the model class for table "tenant".
@@ -10,7 +11,6 @@ use Yii;
  * @property integer $id
  * @property string $name
  * @property integer $logo_image_id
- * @property integer $space_id
  * @property integer $goods_category_id
  * @property string $work_time
  * @property string $description
@@ -18,11 +18,11 @@ use Yii;
  * @property string $phone
  * @property string $site
  *
+ * @property Space[] $spaces
  * @property Stock[] $stocks
  * @property GoodsCategory $goodsCategory
  * @property Image $logoImage
  * @property Image $photoImage
- * @property Space $space
  */
 class Tenant extends \yii\db\ActiveRecord
 {
@@ -41,14 +41,13 @@ class Tenant extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'required'],
-            [['logo_image_id', 'space_id', 'goods_category_id', 'photo_image_id'], 'integer'],
+            [['logo_image_id', 'goods_category_id', 'photo_image_id'], 'integer'],
             [['description'], 'string'],
             [['name', 'phone'], 'string', 'max' => 64],
             [['work_time', 'site'], 'string', 'max' => 255],
             [['goods_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => GoodsCategory::className(), 'targetAttribute' => ['goods_category_id' => 'id']],
             [['logo_image_id'], 'exist', 'skipOnError' => true, 'targetClass' => Image::className(), 'targetAttribute' => ['logo_image_id' => 'id']],
             [['photo_image_id'], 'exist', 'skipOnError' => true, 'targetClass' => Image::className(), 'targetAttribute' => ['photo_image_id' => 'id']],
-            [['space_id'], 'exist', 'skipOnError' => true, 'targetClass' => Space::className(), 'targetAttribute' => ['space_id' => 'id']],
         ];
     }
 
@@ -61,7 +60,6 @@ class Tenant extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Наименование',
             'logo_image_id' => 'Логотип',
-            'space_id' => 'Площадь',
             'goods_category_id' => 'Категория товаров',
             'work_time' => 'Время работы',
             'description' => 'Описание',
@@ -69,6 +67,14 @@ class Tenant extends \yii\db\ActiveRecord
             'site' => 'Сайт',
             'phone' => 'Телефон',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSpaces()
+    {
+        return $this->hasMany(Space::className(), ['tenant_id' => 'id']);
     }
 
     /**
@@ -101,14 +107,6 @@ class Tenant extends \yii\db\ActiveRecord
     public function getPhotoImage()
     {
         return $this->hasOne(Image::className(), ['id' => 'photo_image_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getSpace()
-    {
-        return $this->hasOne(Space::className(), ['id' => 'space_id']);
     }
 
     /**

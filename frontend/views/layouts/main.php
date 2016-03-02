@@ -76,7 +76,7 @@ AppAssetConfiguration::register($this);
                 'name2' => 'Зона<br>творчества',
                 'url' => '/tenant/creativity-zone',
                 'iconClass' => 'menu-icon-3',
-                'active' => Yii::$app->controller->getUniqueId() == 'tenant'
+                'active' => Yii::$app->controller->getUniqueId() == 'tenant' && Yii::$app->controller->action->id == 'creative-zone'
             ],
             [
                 'name' => 'Для арендаторов',
@@ -189,8 +189,7 @@ AppAssetConfiguration::register($this);
                                     $tenants = Tenant::find()->all();
                                     foreach($tenants as $tenant):
                                         $tenantImage = $tenant->logoImage;
-                                        $tenantImage = $tenantImage ? $tenantImage : new Image();
-                                    ?>
+                                        if($tenantImage):?>
                                         <li>
                                             <a href="<?=Url::to(['/tenant/view', 'id'=>$tenant->id])?>" class="hc-link">
                                                 <div class="hc-link-cell">
@@ -198,6 +197,7 @@ AppAssetConfiguration::register($this);
                                                 </div>
                                             </a>
                                         </li>
+                                        <?endif?>
                                     <?endforeach?>
                                 </ul>
                             </div>
@@ -278,6 +278,14 @@ AppAssetConfiguration::register($this);
         </div>
         <!--/footer/-->
 
+        <div class="full-width mobile-tooltip transit-1000">
+            <div class="mt-container">
+                <div class="close-mt-tooltip transit-300">Х</div>
+                <div class="mt-content">
+                    <div class="mt-content-block">mobile popup</div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </section>

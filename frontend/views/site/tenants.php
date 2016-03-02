@@ -1,5 +1,6 @@
 <?
 use common\models\Image;
+use yii\helpers\Url;
 ?>
 
 <div class="full-width tenants-container">
@@ -23,7 +24,7 @@ use common\models\Image;
             </div>
             <?foreach($freeSpaces as $freeSpace):?>
                 <p>
-                    <a href="#" class=""><?=$freeSpace->level->name?> этаж <?=$freeSpace->area?> кв.м</a>
+                    <a href="<?=Url::to(['/tenant/view', 'id'=>$freeSpace->tenant_id])?>" class=""><?=$freeSpace->name?> <?=$freeSpace->area ? $freeSpace->area.' кв.м' : ""?></a>
                 </p>
             <?endforeach?>
         </div>
@@ -42,20 +43,6 @@ use common\models\Image;
                     <a class="ts-advertising transit-300" data-image="<?=$advImage->getSrc()?>"><?=$advertising->name?></a>
                 </p>
             <?endforeach?>
-
-            <p>
-                <b>Свободны:</b>
-            </p>
-
-            <p>
-                Рекламное место 1 – 20 000 рублей
-            </p>
-            <p>
-                Рекламное место 1 – 20 000 рублей
-            </p>
-            <p>
-                Рекламное место 1 – 20 000 рублей
-            </p>
 
         </div>
 

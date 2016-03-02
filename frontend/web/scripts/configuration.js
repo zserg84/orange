@@ -150,12 +150,81 @@ function mapModule() {
 mapModule();
 
 
+function activeBox(itemBox, space, e) {
+    if(!space)
+        return;
+    var iBox = $("."+itemBox);
+    var iTooltip = $(".map-tooltip");
+    var winX = document.documentElement.clientWidth;
+    allDieActive();
+    iBox.addClass("box-active");
+
+    var target = e.target;
+    var thisObj = $(target).offset();
+    var curX = (e.pageX - thisObj.left) - 147;
+    var curY = (e.pageY - thisObj.top) - 10;
+    $.ajax({
+        url: '/tenant/info',
+        type: 'GET',
+        data: {spaceId: space},
+        error: function (xhr, status, error) {
+            alert('error');
+        },
+        success: function (result, status, xhr) {
+            $(iTooltip).find(".tooltip-content").html(result);
+            if ( winX < 1080 ) {
+                $(".mobile-tooltip").addClass("mt-visible");
+                $(".mt-content-block").replaceWith(iTooltip.html());
+            } else {
+                iTooltip.addClass("tt-active");
+
+                $(iTooltip).css({ left : curX + "px", top : curY + "px" });
+
+            }
+        }
+    });
+}
+function inHoverBox(itemBox) {
+    var hBox = $("."+itemBox);
+    $(".map-box").each(function() { $(this).removeClass("hover-box-active"); });
+    hBox.addClass("hover-box-active");
+}
+function outHoverBox() {
+    $(".map-box").each(function() { $(this).removeClass("hover-box-active"); });
+}
+function allDieActive() {
+    $(".map-box").each(function() { $(this).removeClass("box-active"); });
+    $(".map-tooltip").each(function() { $(this).removeClass("tt-active"); });
+}
+$(document).mousedown(function (e){
+    var mapBox = $(".map-tooltips-boxes");
+    if (!mapBox.is(e.target) && mapBox.has(e.target).length === 0) { allDieActive(); }
+});
+
+$(document).on("click", ".close-mt-tooltip", function() {
+    $(".mt-content").children(".tooltip-container").remove();
+    $(".mt-content").append("<div class='mt-content-block'>mobile popup</div>");
+    $(".mobile-tooltip").removeClass("mt-visible");
+});
+
 $(document).on("click", ".ts-advertising", function() {
-    $(".pop-leave-demand .pop-description img").prop('src', $(this).data('image'));
     $(".pop-leave-demand").addClass("pop-show");
 });
 $(document).on("click", ".pop-close", function() {
     $(".pop-leave-demand").removeClass("pop-show");
+});
+
+$(document).on("mouseover", "#mapCoordinateCur area", function(){
+    $block = $(this).data("block");
+    inHoverBox($block);
+});
+$(document).on("mouseout", "#mapCoordinateCur area", function(){
+    outHoverBox($block);
+});
+$(document).on("click", "#mapCoordinateCur area", function(e){
+    $block = $(this).data("block");
+    $space = $(this).data("space");
+    activeBox($block, $space,e);
 });
 
 

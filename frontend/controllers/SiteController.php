@@ -124,8 +124,27 @@ class SiteController extends Controller
 
     public function actionTcMap($levelId=1){
         $curLevel = Level::findOne($levelId);
+        $spaces = Space::find()->andWhere([
+            'level_id' => $curLevel->id
+        ])->orderBy('id')->all();
+        $cats = [];
+        foreach($spaces as $space){
+            $tenant = $space->tenant;
+            if($tenant){
+                if($category = $tenant->goodsCategory){
+                    $cats[$category->id][] = [
+                        'spaceName' => $space->name,
+                        'tenantName' => $tenant->name,
+                        'color' => $category->color,
+                    ];
+                }
+            }
+        }
+
         return $this->render('tc-map', [
             'curLevel' => $curLevel,
+            'spaces' => $spaces,
+            'cats' => $cats,
         ]);
     }
 

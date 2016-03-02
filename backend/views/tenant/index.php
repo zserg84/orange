@@ -26,7 +26,7 @@ $gridConfig = [
             'class' => CheckboxColumn::classname()
         ],
         'name',
-        [
+        /*[
             'attribute' => 'levelName',
             'filter' => Html::activeDropDownList(
                 $searchModel,
@@ -37,7 +37,7 @@ $gridConfig = [
                     'prompt' => 'Выберите'
                 ]
             )
-        ],
+        ],*/
         [
             'attribute' => 'categoryName',
             'filter' => Html::activeDropDownList(

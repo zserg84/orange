@@ -3,7 +3,7 @@
 namespace common\models;
 
 use Yii;
-
+use common\models\query\StockQuery;
 /**
  * This is the model class for table "stock".
  *

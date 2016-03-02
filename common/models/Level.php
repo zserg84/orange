@@ -3,7 +3,7 @@
 namespace common\models;
 
 use Yii;
-
+use common\models\query\LevelQuery;
 /**
  * This is the model class for table "level".
  *

@@ -3,9 +3,9 @@
 namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\common\models\Space]].
+ * This is the ActiveQuery class for [[Space]].
  *
- * @see \common\models\Space
+ * @see Space
  */
 class SpaceQuery extends \yii\db\ActiveQuery
 {
@@ -17,7 +17,7 @@ class SpaceQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return \common\models\Space[]|array
+     * @return Space[]|array
      */
     public function all($db = null)
     {
@@ -26,10 +26,24 @@ class SpaceQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return \common\models\Space|array|null
+     * @return Space|array|null
      */
     public function one($db = null)
     {
         return parent::one($db);
+    }
+
+    public function free(){
+        $this->innerJoinWith([
+            'tenant' => function($query){
+                $query->andWhere([
+                    'tenant.name' => 'Свободно'
+                ]);
+            }
+        ]);
+        /*$this->andWhere([
+            'tenant_id' => null
+        ]);*/
+        return $this;
     }
 }

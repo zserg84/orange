@@ -46,6 +46,7 @@
     /**/
 
     .module-map-floor { overflow-x: scroll; }
+    .map-tooltip { display: none; }
 
 }
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace common\models;
+namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[Level]].
+ * This is the ActiveQuery class for [[Tenant]].
  *
- * @see Level
+ * @see Tenant
  */
-class LevelQuery extends \yii\db\ActiveQuery
+class TenantQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -17,7 +17,7 @@ class LevelQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Level[]|array
+     * @return Tenant[]|array
      */
     public function all($db = null)
     {
@@ -26,7 +26,7 @@ class LevelQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Level|array|null
+     * @return Tenant|array|null
      */
     public function one($db = null)
     {

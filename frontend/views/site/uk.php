@@ -10,9 +10,6 @@ use common\models\Image;
             <div class="or-title-underline"></div>
         </div>
 
-        <div class="full-width mcc-title-1">
-            Реквизиты:
-        </div>
         <div class="full-width mcc-bik">
             <?=$uk->properties?>
         </div>

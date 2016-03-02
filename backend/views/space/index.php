@@ -25,6 +25,7 @@ $gridConfig = [
         [
             'class' => CheckboxColumn::classname()
         ],
+        'id',
         'name',
         'levelName',
         'area'

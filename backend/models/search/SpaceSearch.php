@@ -60,6 +60,14 @@ class SpaceSearch extends Space
 
         $query->andFilterWhere(['LIKE', 'space.name', $this->name]);
 
+        if($this->_levelName){
+            $query->innerJoinWith([
+                'level' => function($query){
+                    $query->andFilterWhere(['=', 'level.name', $this->_levelName]);
+                }
+            ]);
+        }
+
         return $dataProvider;
     }
 

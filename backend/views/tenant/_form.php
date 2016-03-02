@@ -26,14 +26,9 @@ use vova07\imperavi\Widget as Imperavi;
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <?= $form->field($formModel, 'space_id')->dropDownList(ArrayHelper::map(Space::find()->all(), 'id', 'name'), [
-                'prompt' => 'Не занимает площадь',
+            <?= $form->field($formModel, 'goods_category_id')->dropDownList(ArrayHelper::map(GoodsCategory::find()->all(), 'id', 'name'), [
+                'prompt' => 'Свободно'
             ])?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <?= $form->field($formModel, 'goods_category_id')->dropDownList(ArrayHelper::map(GoodsCategory::find()->all(), 'id', 'name'))?>
         </div>
     </div>
     <div class="row">

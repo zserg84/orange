@@ -9,6 +9,7 @@
 namespace frontend\controllers;
 
 
+use common\models\Space;
 use common\models\Tenant;
 
 class TenantController extends Controller
@@ -31,6 +32,23 @@ class TenantController extends Controller
         $tenant = Tenant::findOne($id);
         return $this->render('view', [
             'tenant' => $tenant
+        ]);
+    }
+
+    public function actionInfo( $spaceId){
+        $space = Space::findOne($spaceId);
+        $tenant = Tenant::findOne($space->tenant_id);
+        if(!$space->tenant_id || ($tenant && $tenant->name == 'Свободно'))
+            return $this->renderAjax('info_empty', [
+                'space' => $space,
+                'tenant' => $tenant,
+            ]);
+
+        if(!$tenant)
+            return 'Unknown tenant';
+        return $this->renderAjax('info', [
+            'tenant' => $tenant,
+            'space' => $space,
         ]);
     }
 } 
