@@ -250,7 +250,7 @@ AppAssetConfiguration::register($this);
                             <img src="/images/i_popup/pop-close-hover.png" alt="" class="pop-close-active transit-300">
                         </div>
                         <div class="full-width pop-description">
-                            <img src="/images/i_tenants/photo-1.jpg" alt="" class="full-width">
+                            <img src="" alt="" class="full-width">
                         </div>
                     </div>
                 </div>
